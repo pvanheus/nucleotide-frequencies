@@ -2,8 +2,9 @@
 calculate the nucleotide frequencies
 
 Running the Perl script on all the fasta files
-for file in `ls *.fa`; do echo $file; calculate_nuc.pl $file; done
+`for file in `ls *.fa`; do echo $file; calculate_nuc.pl $file; done`
 
+```bash
 for file in `ls retrieve-seq_2018-03-01.101*`; do echo $file; perl calculate_nuc.pl $file; done
 retrieve-seq_2018-03-01.101106_Upstream.fasta
 Length = 418390
@@ -32,3 +33,4 @@ T: 43205
 Other: 0
 GC: 63.87
 AT: 36.13
+```
